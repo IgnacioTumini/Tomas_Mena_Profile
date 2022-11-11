@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.body_index {
+  background-image: linear-gradient(
+      115deg,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(../assets/images/fondoindex3.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+/*.grilla {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 10vh 200vh 10vh;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+/* Navegador */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.822);
+
+  width: 100%;
+  height: 10vh;
+}
+.header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  padding-right: 150px;
+}
+
+.navegador {
+  color: gray;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.navegador:hover {
+  color: white;
+}
+.margen_top {
+  padding-top: 10vh;
+}
+/* fin navegador*/
+/* Titulos */
+.title {
+  font-family: "Poppins", sans-serif;
+  font-size: 100px;
+  padding-top: 30vh;
+  font-weight: 600;
+  text-decoration: 4px underline;
+  letter-spacing: 8px;
+  color: white;
+}
+/* Fin Titulos */
+/* Letra parrafo*/
+.l-principal {
+  color: white;
+  font-family: "Poppins", sans-serif;
+
+  letter-spacing: 1px;
+}
+.pp {
+  padding-top: 30px;
+}
+
+/* Fin letra parrafo*/
+/* Subtitulos */
+.subtitle {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  letter-spacing: 4px;
+}
+.subprincipal {
+  font-size: 35px;
+}
+/* Fin Subtitulos*/
+
+/* Primera seccion*/
+.pri-sec {
+  height: 100vh;
+}
+/* Fin primera seccion*/
+/* Segunda Seccion*/
+.seg-sec {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+/* Fin segunda seccion*/
+/* Tercera seccion*/
+.ter-sec {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+
+  background-image: linear-gradient(
+      115deg,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(../assets/images/Proyecto\ nuevo\ foto\ 2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  margin-right: 0;
+}
+.me_presento {
+  width: 40%;
+
+  justify-content: center;
+  align-items: flex-end;
+  margin: auto;
+  margin-left: 5%;
+}
+
+.box_arte {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin-left: 5%;
+}
+.box_parrafo_arte {
+  width: 80%;
+  align-items: center;
+}
+.box_imaganes_arte {
+  display: flex;
+  width: 50%;
+
+  height: 40vh;
+}
+/* Fin tercera seccion*/
+.center {
+  text-align: center;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(0, 0, 0);
+  height: 12vh;
+  color: gray;
+  width: 100%;
+  align-items: center;
+
+  justify-content: center;
+}
+.incons_footer {
+  filter: invert(1);
+  padding: 5px 5px 0px 5px;
+}
+.display_icons {
+  display: block;
+}
+.derechos {
+  color: gray;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+}
+
+/* Fin Footer*/
+.seccion_galeria {
+  padding-top: 10vh;
+  height: 100vh;
+}
+.h1_galeria {
+  text-align: center;
+}
+.h1_servicios {
+  text-align: center;
+}
+.h1_contacto {
+  text-align: center;
+}
+.album {
+  color: white;
+  padding-top: 40vh;
+}
+.seccion_sobremi {
+  height: 100vh;
+  padding-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.box_sobremi {
+  display: flex;
+  flex-direction: column;
+
+  width: 85%;
+  justify-content: center;
+  height: 60vh;
+}
+.parrafo_sobremi {
+  padding: 2%;
+}
+.seccion_contacto {
+  height: 100vh;
+  padding-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.seccion_servicios {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+.box_servicios {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5%;
+  width: 85%;
+  justify-content: center;
+  height: 60vh;
+
+  gap: 5px;
+}
+
+.imagenes_index {
+  width: 200px;
+  height: 200px;
+}
+.box_contacto {
+  background-color: rgba(0, 0, 0, 0.808);
+  display: flex;
+
+  width: 30%;
+  height: 60vh;
+  padding: 10px;
+  margin-top: 30px;
+}
+.form_contacto {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: start;
+  gap: 5px;
+}
