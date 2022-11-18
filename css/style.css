@@ -35,7 +35,7 @@ body {
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.788);
+  background-color: rgba(0, 0, 0, 0.959);
 
   width: 100%;
   height: 10vh;
@@ -46,7 +46,7 @@ body {
   gap: 40px;
   width: 100%;
   justify-content: end;
-  background-color: rgba(0, 0, 0, 0.74);
+
   height: 100%;
 
   margin-bottom: none;
@@ -66,7 +66,7 @@ body {
   color: white;
 }
 .margen_top {
-  padding-top: 10vh;
+  margin-top: 12vh;
 }
 /* fin navegador*/
 /* Titulos */
@@ -181,17 +181,23 @@ footer {
 
   justify-content: center;
 }
-.incons_footer {
-  filter: invert(1);
-  padding: 5px 5px 0px 5px;
-}
-.display_icons {
-  display: block;
-}
+
 .derechos {
   color: gray;
   font-family: "Poppins", sans-serif;
   font-size: 15px;
+}
+.redes {
+  color: gray;
+}
+.hover-instagram:hover {
+  color: deeppink;
+}
+.hover-whatsapp:hover {
+  color: aquamarine;
+}
+.hover-facebook:hover {
+  color: steelblue;
 }
 
 /* Fin Footer*/
@@ -225,12 +231,12 @@ footer {
 
   width: 85%;
   justify-content: center;
-  height: 60vh;
 }
 .parrafo_sobremi {
   padding: 2%;
 }
 .seccion_contacto {
+  min-height: 100vh;
   padding-top: 10vh;
   display: flex;
   flex-direction: column;
@@ -238,7 +244,7 @@ footer {
   justify-content: center;
 }
 .seccion_servicios {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -250,7 +256,6 @@ footer {
   padding-top: 5%;
   width: 85%;
   justify-content: center;
-  height: 60vh;
 
   gap: 5px;
 }
@@ -276,12 +281,19 @@ footer {
   align-items: start;
   gap: 5px;
 }
-.boton_enviar {
-  margin-left: 40%;
-  margin-top: 10%;
+hr {
+  opacity: 1;
+  border: solid white 0.5px;
 }
+
 @media (max-width: 768px) {
   .header nav ul {
     align-items: center;
+    background-color: rgb(0, 0, 0);
+  }
+}
+@media (max-width: 576px) {
+  .derechos {
+    font-size: 10px;
   }
 }
