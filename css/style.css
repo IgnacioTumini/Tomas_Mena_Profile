@@ -157,13 +157,13 @@ body {
 /* fin botones*/
 /* Primera seccion*/
 .pri-sec {
-  height: 100vh;
+  height: 80vh;
 }
 /* Fin primera seccion*/
 /* Segunda Seccion*/
 .seg-sec {
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -173,7 +173,7 @@ body {
 /* Fin segunda seccion*/
 /* Tercera seccion*/
 .ter-sec {
-  height: 90vh;
+  min-height: 90vh;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -212,11 +212,20 @@ body {
   align-items: center;
 }
 .box_imaganes_arte {
-  display: flex;
   width: 50%;
-
-  height: 40vh;
+  height: 40%;
 }
+/*caroucel*/
+.carousel-item {
+  height: 60vh;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.carousel-item img {
+  height: 100%;
+  object-fit: cover;
+}
+/*fin caroucel*/
 /* Fin tercera seccion*/
 .center {
   text-align: center;

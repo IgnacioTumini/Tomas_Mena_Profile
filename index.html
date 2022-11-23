@@ -25,7 +25,7 @@
   <body class="body_index">
     <header class="header">
       <nav class="navbar navbar-expand-lg navbar-dark w-100 h-100 nav_dec">
-        <div class="container-fluid">
+        <div class="container">
           <a class="navbar-brand" href="#">
             <img src="./assets/images/LogoMakr-8uRttN.png" alt="#"
           /></a>
@@ -88,34 +88,95 @@
       </section>
       <section class="seg-sec">
         <div class="box_imaganes_arte">
-          <img
-            class="imagenes_index"
-            src="./assets/images/WhatsApp Image 2022-10-17 at 16.58.48.jpeg"
-            alt="Cuadro de 4 imagines"
-          />
-          <img
-            class="imagenes_index"
-            src="./assets/images/WhatsApp Image 2022-10-17 at 16.58.49 (1).jpeg"
-            alt="Cuadro de 4 imagines"
-          />
-          <img
-            class="imagenes_index"
-            src="./assets/images/WhatsApp Image 2022-10-17 at 16.58.50.jpeg"
-            alt="Cuadro de 4 imagines"
-          />
-          <img
-            class="imagenes_index"
-            src="./assets/images/WhatsApp Image 2022-10-17 at 16.58.52.jpeg"
-            alt="Cuadro de 4 imagines"
-          />
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="./assets/images/CARRUCEL FOTO 1.jpeg"
+                  class="d-block w-100 h-30"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./assets/images/carrusel posible 22.jpeg"
+                  class="d-block w-100 h-30"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./assets/images/CARRUCEL FOTO 4.jpeg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
         <div class="box_arte">
           <h2 class="subtitle arte">Diseño</h2>
           <div class="box_parrafo_arte">
             <p class="l-principal">
-              Mi idea es fusionar mi creatividad con las de ustedes y crear
-              diseños únicos para toda la vida.
+              Al momento de conocer a mis clientes busco conectar para
+              comprender sus ideas ,y así poder crear una obra de arte
+              auténtica.
             </p>
+            <a href="./pages/galeria.html"
+              ><button type="submit" class="boton_enviar button">
+                Ver más
+              </button></a
+            >
           </div>
         </div>
       </section>
@@ -124,12 +185,13 @@
         <div class="me_presento">
           <h2 class="subtitle">Me presento</h2>
           <p class="l-principal">
-            Al momento de conocer a mis clientes busco conectar para comprender
-            sus ideas ,y así poder crear una obra de arte auténtica.
+            Mi idea es fusionar mi creatividad con las de ustedes y crear
+            diseños únicos para toda la vida.
           </p>
+
           <a href="./pages/sobremi.html"
             ><button type="submit" class="boton_enviar button">
-              Ver más
+              Leer más
             </button></a
           >
         </div>
