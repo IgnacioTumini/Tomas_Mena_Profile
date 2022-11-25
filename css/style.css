@@ -411,6 +411,10 @@ hr {
     display: flex;
     flex-direction: column;
   }
+  .box_arte {
+    margin-left: 0;
+    margin-bottom: 5%;
+  }
   .title_center_mobile {
     text-align: center;
   }
