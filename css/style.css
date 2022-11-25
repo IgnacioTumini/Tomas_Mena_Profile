@@ -264,7 +264,21 @@ footer {
 /* Fin Footer*/
 .seccion_galeria {
   padding-top: 10vh;
-  height: 100vh;
+
+  min-height: 100vh;
+}
+.box_galeria {
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box_galeria_carrousel_fotografia {
+  width: 40%;
+}
+.box_galeria_carrousel_tatuajes {
+  width: 40%;
 }
 .h1_galeria {
   text-align: center;
@@ -347,7 +361,7 @@ hr {
   border: solid white 0.5px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .header nav ul {
     align-items: center;
     background-color: rgb(0, 0, 0);
