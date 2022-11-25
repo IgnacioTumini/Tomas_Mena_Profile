@@ -157,7 +157,11 @@ body {
 /* fin botones*/
 /* Primera seccion*/
 .pri-sec {
-  height: 80vh;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 /* Fin primera seccion*/
 /* Segunda Seccion*/
@@ -194,7 +198,7 @@ body {
   width: 40%;
 
   justify-content: center;
-  align-items: flex-end;
+
   margin: auto;
   margin-left: 5%;
 }
@@ -263,8 +267,6 @@ footer {
 
 /* Fin Footer*/
 .seccion_galeria {
-  padding-top: 10vh;
-
   min-height: 100vh;
 }
 .box_galeria {
@@ -370,5 +372,63 @@ hr {
 @media (max-width: 576px) {
   .derechos {
     font-size: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .box_galeria {
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5%;
+  }
+  .box_galeria_carrousel_fotografia {
+    width: 90%;
+    margin-top: 5%;
+  }
+  .box_galeria_carrousel_tatuajes {
+    width: 90%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .seg-sec {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .l-principal {
+    text-align: center;
+  }
+  .box_parrafo_arte {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .title_center_mobile {
+    text-align: center;
+  }
+  .box_imaganes_arte {
+    width: 90%;
+    height: 40%;
+  }
+  .me_presento {
+    width: 90%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .title {
+    font-size: 50px;
+  }
+  .descripcion_title {
+    font-size: 20px;
   }
 }
