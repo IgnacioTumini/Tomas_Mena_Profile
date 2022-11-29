@@ -1,0 +1,17 @@
+.seccion_sobremi {
+  padding-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+.box_sobremi {
+  display: flex;
+  flex-direction: column;
+
+  width: 85%;
+  justify-content: center;
+}
+.parrafo_sobremi {
+  padding: 2%;
+}

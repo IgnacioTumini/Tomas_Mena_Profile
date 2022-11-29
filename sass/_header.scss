@@ -1,0 +1,34 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.959);
+  z-index: calc(4);
+  width: 100%;
+  height: 10vh;
+  nav {
+    ul {
+      display: flex;
+      list-style: none;
+      gap: 40px;
+      width: 100%;
+      justify-content: end;
+
+      height: 100%;
+
+      margin-bottom: none;
+
+      .letras_navegador {
+        color: gray;
+        text-decoration: none;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+}

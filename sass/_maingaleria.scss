@@ -1,0 +1,21 @@
+.seccion_galeria {
+  min-height: 100vh;
+}
+
+.box_galeria {
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box_galeria_carrousel_fotografia {
+  width: 40%;
+}
+.box_galeria_carrousel_tatuajes {
+  width: 40%;
+}
+
+.h1_galeria {
+  text-align: center;
+}

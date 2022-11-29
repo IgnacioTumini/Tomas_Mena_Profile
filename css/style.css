@@ -1,35 +1,20 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
+
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-}
+  min-height: 100vh; }
+
 .body_index {
-  background-image: linear-gradient(
-      115deg,
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6)
-    ),
-    url(../assets/images/fondoindex3.jpg);
+  background-image: linear-gradient(115deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/images/fondoindex3.jpg);
   background-attachment: fixed;
   background-position: center;
-  background-size: cover;
-}
-/*.grilla {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 10vh 200vh 10vh;
-  grid-template-areas:
-    "header"
-    "main"
-    "footer";
-}
-/* Navegador */
+  background-size: cover; }
 
+/* Navegador */
 .header {
   display: flex;
   justify-content: space-between;
@@ -38,9 +23,36 @@ body {
   background-color: rgba(0, 0, 0, 0.959);
   z-index: calc(4);
   width: 100%;
-  height: 10vh;
+  height: 10vh; }
+  .header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    width: 100%;
+    justify-content: end;
+    height: 100%;
+    margin-bottom: none; }
+    .header nav ul .letras_navegador {
+      color: gray;
+      text-decoration: none;
+      font-family: "Poppins", sans-serif;
+      font-weight: 600; }
+      .header nav ul .letras_navegador:hover {
+        color: white; }
+
+/*
+.letras_navegador {
+  color: gray;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+
+  &:hover {
+    color: white;
+  }
 }
-.header nav ul {
+*/
+/*.header nav ul {
   display: flex;
   list-style: none;
   gap: 40px;
@@ -51,23 +63,17 @@ body {
 
   margin-bottom: none;
 }
-
-.navegador {
-  color: gray;
-  text-decoration: none;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-}
-
-.navegador:hover {
+*/
+/*
+.letras_navegador:hover {
   color: white;
-}
+}*/
 .active {
-  color: white;
-}
+  color: white; }
+
 .margen_top {
-  margin-top: 12vh;
-}
+  margin-top: 12vh; }
+
 /* fin navegador*/
 /* Titulos */
 .title {
@@ -77,19 +83,17 @@ body {
   font-weight: 600;
   text-decoration: 4px underline;
   letter-spacing: 8px;
-  color: white;
-}
+  color: white; }
+
 /* Fin Titulos */
 /* Letra parrafo*/
 .l-principal {
   color: white;
   font-family: "Poppins", sans-serif;
+  letter-spacing: 1px; }
 
-  letter-spacing: 1px;
-}
 .pp {
-  padding-top: 30px;
-}
+  padding-top: 30px; }
 
 /* Fin letra parrafo*/
 /* Subtitulos */
@@ -97,14 +101,13 @@ body {
   color: white;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  letter-spacing: 4px;
-}
+  letter-spacing: 4px; }
+
 .subprincipal {
-  font-size: 35px;
-}
+  font-size: 35px; }
+
 /* Fin Subtitulos*/
 /* botones*/
-
 .button {
   padding: 0.5em 1em;
   border: 2px solid white;
@@ -117,8 +120,7 @@ body {
   transition: 0.3s;
   z-index: 1;
   font-family: inherit;
-  color: white;
-}
+  color: white; }
 
 .button::before {
   content: "";
@@ -131,29 +133,27 @@ body {
   background: white;
   transition: 0.5s ease;
   display: block;
-  z-index: -1;
-}
+  z-index: -1; }
 
 .button:hover::before {
-  width: 105%;
-}
+  width: 105%; }
 
 .button:hover {
-  color: #111;
-}
+  color: #111; }
+
 .input_estilo {
   background: transparent;
   border: none;
   border-bottom: 1px solid white;
-  border-radius: 0;
-}
+  border-radius: 0; }
+
 .input_estilo:focus {
   background: transparent;
   border: none;
   border-bottom: 1px solid white;
   border-radius: 0;
-  outline: none;
-}
+  outline: none; }
+
 /* fin botones*/
 /* Primera seccion*/
 .pri-sec {
@@ -161,8 +161,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-}
+  flex-direction: column; }
+
 /* Fin primera seccion*/
 /* Segunda Seccion*/
 .seg-sec {
@@ -172,8 +172,20 @@ body {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
+  .seg-sec .box_imaganes_arte {
+    width: 50%;
+    height: 40%; }
+  .seg-sec .box_arte {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5%; }
+  .seg-sec .box_parrafo_arte {
+    width: 80%;
+    align-items: center; }
+
 /* Fin segunda seccion*/
 /* Tercera seccion*/
 .ter-sec {
@@ -181,19 +193,19 @@ body {
   width: 100%;
   display: flex;
   flex-direction: row;
-
-  background-image: linear-gradient(
-      115deg,
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6)
-    ),
-    url(../assets/images/Proyecto\ nuevo\ foto\ 2.jpg);
+  background-image: linear-gradient(115deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/images/Proyecto_nuevo_foto_2.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position-y: center;
-  margin-right: 0;
-}
+  margin-right: 0; }
+  .ter-sec .me_presento {
+    width: 40%;
+    justify-content: center;
+    margin: auto;
+    margin-left: 5%; }
+
+/*
 .me_presento {
   width: 40%;
 
@@ -202,7 +214,7 @@ body {
   margin: auto;
   margin-left: 5%;
 }
-
+/*
 .box_arte {
   width: 50%;
   display: flex;
@@ -214,61 +226,78 @@ body {
 .box_parrafo_arte {
   width: 80%;
   align-items: center;
-}
+}*/
+/*
 .box_imaganes_arte {
   width: 50%;
   height: 40%;
-}
+}*/
 /*caroucel*/
 .carousel-item {
   height: 60vh;
   padding-left: 5%;
-  padding-right: 5%;
-}
+  padding-right: 5%; }
+
 .carousel-item img {
   height: 100%;
-  object-fit: cover;
-}
+  object-fit: cover; }
+
 /*fin caroucel*/
 /* Fin tercera seccion*/
 .center {
-  text-align: center;
-}
+  text-align: center; }
+
 /* footer */
 footer {
   display: flex;
   flex-direction: column;
-  background-color: rgb(0, 0, 0);
+  background-color: black;
   height: 12vh;
   color: gray;
   width: 100%;
   align-items: center;
+  justify-content: center; }
+  footer .derechos {
+    color: gray;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px; }
+  footer .redes {
+    color: gray; }
 
-  justify-content: center;
-}
-
-.derechos {
+/*.derechos {
   color: gray;
   font-family: "Poppins", sans-serif;
   font-size: 15px;
 }
 .redes {
   color: gray;
-}
+}*/
 .hover-instagram:hover {
-  color: deeppink;
-}
+  color: deeppink; }
+
 .hover-whatsapp:hover {
-  color: aquamarine;
-}
+  color: aquamarine; }
+
 .hover-facebook:hover {
-  color: steelblue;
-}
+  color: steelblue; }
 
 /* Fin Footer*/
 .seccion_galeria {
-  min-height: 100vh;
-}
+  min-height: 100vh; }
+  .seccion_galeria .h1_galeria {
+    text-align: center; }
+  .seccion_galeria .box_galeria {
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .seccion_galeria .box_galeria_carrousel_fotografia {
+    width: 40%; }
+  .seccion_galeria .box_galeria_carrousel_tatuajes {
+    width: 40%; }
+
+/*
 .box_galeria {
   width: 100%;
   min-height: 90vh;
@@ -282,51 +311,61 @@ footer {
 .box_galeria_carrousel_tatuajes {
   width: 40%;
 }
+
 .h1_galeria {
   text-align: center;
 }
 .h1_servicios {
   text-align: center;
-}
+}*/
 .h1_contacto {
-  text-align: center;
-}
+  text-align: center; }
+
 .album {
   color: white;
-  padding-top: 40vh;
-}
+  padding-top: 40vh; }
+
 .seccion_sobremi {
   padding-top: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh;
-}
+  min-height: 100vh; }
+
 .box_sobremi {
   display: flex;
   flex-direction: column;
-
   width: 85%;
-  justify-content: center;
-}
+  justify-content: center; }
+
 .parrafo_sobremi {
-  padding: 2%;
-}
+  padding: 2%; }
+
 .seccion_contacto {
   min-height: 100vh;
   padding-top: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-}
+  justify-content: center; }
+
 .seccion_servicios {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   width: 100%;
-  align-items: center;
-}
+  align-items: center; }
+  .seccion_servicios .h1_servicios {
+    text-align: center; }
+  .seccion_servicios .box_servicios {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+    width: 85%;
+    justify-content: center;
+    gap: 5px; }
+
+/*
 .box_servicios {
   display: flex;
   flex-direction: column;
@@ -335,64 +374,55 @@ footer {
   justify-content: center;
 
   gap: 5px;
-}
-
-.imagenes_index {
-  width: 200px;
-  height: 200px;
-}
+}*/
 .box_contacto {
   background-color: rgba(0, 0, 0, 0.808);
   display: flex;
-
   padding: 10px;
   margin-bottom: 20px;
+  flex-wrap: wrap; }
 
-  flex-wrap: wrap;
-}
 .form_contacto {
   display: inline-block;
   flex-wrap: wrap;
   width: 100%;
   flex-direction: column;
   align-items: start;
-  gap: 5px;
-}
+  gap: 5px; }
+
 hr {
   opacity: 1;
-  border: solid white 0.5px;
-}
+  border: solid white 0.5px; }
 
 @media (max-width: 992px) {
   .header nav ul {
     align-items: center;
-    background-color: rgb(0, 0, 0);
-  }
-}
+    background-color: black; } }
+
 @media (max-width: 576px) {
   .derechos {
-    font-size: 10px;
-  }
-}
+    font-size: 10px; } }
+
 @media (max-width: 768px) {
-  .box_galeria {
-    width: 100%;
-    min-height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 5%;
-  }
-  .box_galeria_carrousel_fotografia {
-    width: 90%;
-    margin-top: 5%;
-  }
-  .box_galeria_carrousel_tatuajes {
-    width: 90%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-  }
+  .seccion_galeria {
+    min-height: 100vh; }
+    .seccion_galeria .h1_galeria {
+      text-align: center; }
+    .seccion_galeria .box_galeria {
+      width: 100%;
+      min-height: 90vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 5%; }
+    .seccion_galeria .box_galeria_carrousel_fotografia {
+      width: 90%;
+      margin-top: 5%; }
+    .seccion_galeria .box_galeria_carrousel_tatuajes {
+      width: 90%;
+      margin-top: 5%;
+      margin-bottom: 5%; }
   .seg-sec {
     display: flex;
     min-height: 100vh;
@@ -400,39 +430,29 @@ hr {
     flex-direction: column-reverse;
     flex-wrap: nowrap;
     justify-content: center;
-    align-items: center;
-  }
+    align-items: center; }
   .l-principal {
-    text-align: center;
-  }
+    text-align: center; }
   .box_parrafo_arte {
     width: 100%;
     align-items: center;
     display: flex;
-    flex-direction: column;
-  }
+    flex-direction: column; }
   .box_arte {
     margin-left: 0;
-    margin-bottom: 5%;
-  }
+    margin-bottom: 5%; }
   .title_center_mobile {
-    text-align: center;
-  }
+    text-align: center; }
   .box_imaganes_arte {
     width: 90%;
-    height: 40%;
-  }
+    height: 40%; }
   .me_presento {
     width: 90%;
     justify-content: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
-  }
+    align-items: center; }
   .title {
-    font-size: 50px;
-  }
+    font-size: 50px; }
   .descripcion_title {
-    font-size: 20px;
-  }
-}
+    font-size: 20px; } }

@@ -1,0 +1,19 @@
+.seccion_servicios {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  .h1_servicios {
+    text-align: center;
+  }
+  .box_servicios {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+    width: 85%;
+    justify-content: center;
+
+    gap: 5px;
+  }
+}

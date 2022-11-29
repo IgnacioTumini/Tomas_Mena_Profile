@@ -1,0 +1,61 @@
+.pri-sec {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* Segunda Seccion*/
+.seg-sec {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.box_arte {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin-left: 5%;
+}
+.box_parrafo_arte {
+  width: 80%;
+  align-items: center;
+}
+.box_imaganes_arte {
+  width: 50%;
+  height: 40%;
+}
+/* Fin segunda seccion*/
+.ter-sec {
+  min-height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+
+  background-image: linear-gradient(
+      115deg,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(../assets/images/Proyecto_nuevo_foto_2.jpg);
+
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  margin-right: 0;
+}
+.me_presento {
+  width: 40%;
+
+  justify-content: center;
+
+  margin: auto;
+  margin-left: 5%;
+}

@@ -1,0 +1,29 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(0, 0, 0);
+  height: 12vh;
+  color: gray;
+  width: 100%;
+  align-items: center;
+
+  justify-content: center;
+}
+.derechos {
+  color: gray;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+}
+.redes {
+  color: gray;
+}
+
+.hover-instagram:hover {
+  color: deeppink;
+}
+.hover-whatsapp:hover {
+  color: aquamarine;
+}
+.hover-facebook:hover {
+  color: steelblue;
+}

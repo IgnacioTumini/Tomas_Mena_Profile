@@ -1,0 +1,28 @@
+.seccion_contacto {
+  min-height: 100vh;
+  padding-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.h1_contacto {
+  text-align: center;
+}
+.box_contacto {
+  background-color: rgba(0, 0, 0, 0.808);
+  display: flex;
+
+  padding: 10px;
+  margin-bottom: 20px;
+
+  flex-wrap: wrap;
+}
+.form_contacto {
+  display: inline-block;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-direction: column;
+  align-items: start;
+  gap: 5px;
+}
