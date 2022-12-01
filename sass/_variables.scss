@@ -1,7 +1,16 @@
-$centrado: center;
-.active {
-  color: white;
-}
+$color-header: rgba(0, 0, 0, 0.959);
+$color-footer: rgb(0, 0, 0);
+$color-letras: white;
+$color-letras-header-footer: gray;
+$texto-fuente: "Poppins", sans-serif;
+
+$colores-redes: (
+  instagram: deeppink,
+  face: steelblue,
+  whatsapp: aquamarine,
+);
+
+/* CLASES GENERALES */
 .margen_top {
   margin-top: 12vh;
 }
@@ -16,3 +25,10 @@ hr {
   opacity: 1;
   border: solid white 0.5px;
 }
+.pading_0 {
+  padding: 0;
+}
+.active {
+  color: white;
+}
+/* FIN CLASES GENERALES */

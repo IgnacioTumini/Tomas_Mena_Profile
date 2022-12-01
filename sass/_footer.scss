@@ -1,29 +1,29 @@
 footer {
   display: flex;
   flex-direction: column;
-  background-color: rgb(0, 0, 0);
+  background-color: $color-footer;
   height: 12vh;
-  color: gray;
+  color: $color-letras-header-footer;
   width: 100%;
   align-items: center;
 
   justify-content: center;
-}
-.derechos {
-  color: gray;
-  font-family: "Poppins", sans-serif;
-  font-size: 15px;
-}
-.redes {
-  color: gray;
-}
+  .derechos {
+    color: $color-letras-header-footer;
+    font-family: $texto-fuente;
+    font-size: 15px;
+  }
+  .redes {
+    color: $color-letras-header-footer;
+  }
 
-.hover-instagram:hover {
-  color: deeppink;
-}
-.hover-whatsapp:hover {
-  color: aquamarine;
-}
-.hover-facebook:hover {
-  color: steelblue;
+  .hover-instagram:hover {
+    color: map-get($colores-redes, instagram);
+  }
+  .hover-whatsapp:hover {
+    color: map-get($colores-redes, whatsapp);
+  }
+  .hover-facebook:hover {
+    color: map-get($colores-redes, face);
+  }
 }

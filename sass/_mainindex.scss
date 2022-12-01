@@ -1,5 +1,5 @@
 .pri-sec {
-  min-height: 80vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,23 +14,24 @@
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-}
-.box_arte {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  .box_imaganes_arte {
+    width: 50%;
+    height: 40%;
+  }
+  .box_arte {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-  margin-left: 5%;
+    margin-left: 5%;
+  }
+  .box_parrafo_arte {
+    width: 80%;
+    align-items: center;
+  }
 }
-.box_parrafo_arte {
-  width: 80%;
-  align-items: center;
-}
-.box_imaganes_arte {
-  width: 50%;
-  height: 40%;
-}
+
 /* Fin segunda seccion*/
 .ter-sec {
   min-height: 90vh;

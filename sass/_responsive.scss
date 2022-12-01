@@ -2,7 +2,9 @@
   .header nav ul {
     align-items: center;
     background-color: rgb(0, 0, 0);
+
     nav {
+      border-bottom: 5px solid white;
       ul {
         align-items: center;
         background-color: rgb(0, 0, 0);
@@ -13,71 +15,60 @@
 @media (max-width: 768px) {
   .seccion_galeria {
     min-height: 100vh;
-  }
-  .h1_galeria {
-    text-align: center;
-  }
-  .box_galeria {
-    width: 100%;
-    min-height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 5%;
-  }
-  .box_galeria_carrousel_fotografia {
-    width: 90%;
-    margin-top: 5%;
-  }
-  .box_galeria_carrousel_tatuajes {
-    width: 90%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-  }
-
-  .box_arte {
-    margin-left: 0;
-    margin-bottom: 5%;
-  }
-  .box_imaganes_arte {
-    width: 90%;
-    height: 40%;
-  }
-  .box_parrafo_arte {
-    width: 100%;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+    .h1_galeria {
+      text-align: center;
+    }
+    .box_galeria {
+      width: 100%;
+      min-height: 90vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 5%;
+      .box_galeria_carrousel_fotografia {
+        width: 90%;
+        margin-top: 5%;
+      }
+      .box_galeria_carrousel_tatuajes {
+        width: 90%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+      }
+    }
   }
 
   .l-principal {
     text-align: center;
   }
-  .box_parrafo_arte {
+  .seg-sec {
+    flex-direction: column-reverse;
     width: 100%;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+    .box_parrafo_arte {
+      width: 90%;
+
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+    .box_arte {
+      width: 100%;
+      margin-left: 0;
+      margin-bottom: 5%;
+
+      align-items: center;
+    }
+    .box_imaganes_arte {
+      width: 90%;
+      height: 40%;
+    }
   }
-  .box_arte {
-    margin-left: 0;
-    margin-bottom: 5%;
-  }
+
   .title_center_mobile {
     text-align: center;
   }
-  .box_imaganes_arte {
-    width: 90%;
-    height: 40%;
-  }
-  .me_presento {
-    width: 90%;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+
   .title {
     font-size: 50px;
   }
@@ -92,11 +83,17 @@
     flex-direction: column;
     align-items: center;
   }
+  .subtitle {
+    text-align: center;
+  }
 }
+
 @media (max-width: 576px) {
-  .derechos {
-    color: gray;
-    font-family: "Poppins", sans-serif;
-    font-size: 10px;
+  footer {
+    .derechos {
+      color: gray;
+      font-family: "Poppins", sans-serif;
+      font-size: 10px;
+    }
   }
 }

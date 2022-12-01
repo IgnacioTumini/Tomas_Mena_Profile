@@ -1,3 +1,24 @@
+/* CLASES GENERALES */
+.margen_top {
+  margin-top: 12vh; }
+
+.pp {
+  padding-top: 30px; }
+
+.center {
+  text-align: center; }
+
+hr {
+  opacity: 1;
+  border: solid white 0.5px; }
+
+.pading_0 {
+  padding: 0; }
+
+.active {
+  color: white; }
+
+/* FIN CLASES GENERALES */
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +35,6 @@ body {
   background-position: center;
   background-size: cover; }
 
-/* Navegador */
 .header {
   display: flex;
   justify-content: space-between;
@@ -22,8 +42,7 @@ body {
   position: fixed;
   background-color: rgba(0, 0, 0, 0.959);
   z-index: calc(4);
-  width: 100%;
-  height: 10vh; }
+  width: 100%; }
   .header nav ul {
     display: flex;
     list-style: none;
@@ -40,73 +59,151 @@ body {
       .header nav ul .letras_navegador:hover {
         color: white; }
 
-/*
-.letras_navegador {
-  color: gray;
-  text-decoration: none;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-
-  &:hover {
-    color: white;
-  }
-}
-*/
-/*.header nav ul {
+footer {
   display: flex;
-  list-style: none;
-  gap: 40px;
+  flex-direction: column;
+  background-color: black;
+  height: 12vh;
+  color: gray;
   width: 100%;
-  justify-content: end;
+  align-items: center;
+  justify-content: center; }
+  footer .derechos {
+    color: gray;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px; }
+  footer .redes {
+    color: gray; }
+  footer .hover-instagram:hover {
+    color: deeppink; }
+  footer .hover-whatsapp:hover {
+    color: aquamarine; }
+  footer .hover-facebook:hover {
+    color: steelblue; }
 
-  height: 100%;
+.pri-sec {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
 
-  margin-bottom: none;
-}
-*/
-/*
-.letras_navegador:hover {
-  color: white;
-}*/
-.active {
-  color: white; }
+/* Segunda Seccion*/
+.seg-sec {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center; }
+  .seg-sec .box_imaganes_arte {
+    width: 50%;
+    height: 40%; }
+  .seg-sec .box_arte {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5%; }
+  .seg-sec .box_parrafo_arte {
+    width: 80%;
+    align-items: center; }
 
-.margen_top {
-  margin-top: 12vh; }
+/* Fin segunda seccion*/
+.ter-sec {
+  min-height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-image: linear-gradient(115deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/images/Proyecto_nuevo_foto_2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  margin-right: 0; }
 
-/* fin navegador*/
-/* Titulos */
-.title {
-  font-family: "Poppins", sans-serif;
-  font-size: 100px;
-  padding-top: 30vh;
-  font-weight: 600;
-  text-decoration: 4px underline;
-  letter-spacing: 8px;
-  color: white; }
+.me_presento {
+  width: 40%;
+  justify-content: center;
+  margin: auto;
+  margin-left: 5%; }
 
-/* Fin Titulos */
-/* Letra parrafo*/
-.l-principal {
-  color: white;
-  font-family: "Poppins", sans-serif;
-  letter-spacing: 1px; }
+.seccion_sobremi {
+  padding-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh; }
 
-.pp {
-  padding-top: 30px; }
+.box_sobremi {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  justify-content: center; }
 
-/* Fin letra parrafo*/
-/* Subtitulos */
-.subtitle {
-  color: white;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  letter-spacing: 4px; }
+.parrafo_sobremi {
+  padding: 2%; }
 
-.subprincipal {
-  font-size: 35px; }
+.seccion_galeria {
+  min-height: 100vh;
+  padding-top: 5%; }
+  .seccion_galeria .h1_galeria {
+    text-align: center; }
+  .seccion_galeria .box_galeria {
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .seccion_galeria .box_galeria .box_galeria_carrousel_fotografia {
+      width: 40%; }
+    .seccion_galeria .box_galeria .box_galeria_carrousel_tatuajes {
+      width: 40%; }
 
-/* Fin Subtitulos*/
+.seccion_contacto {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 8%; }
+
+.h1_contacto {
+  text-align: center; }
+
+.box_contacto {
+  background-color: rgba(0, 0, 0, 0.808);
+  display: flex;
+  padding: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap; }
+
+.form_contacto {
+  display: inline-block;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-direction: column;
+  align-items: start;
+  gap: 5px; }
+
+.seccion_servicios {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  padding-top: 5%; }
+  .seccion_servicios .h1_servicios {
+    text-align: center; }
+  .seccion_servicios .box_servicios {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+    width: 85%;
+    justify-content: center;
+    gap: 5px; }
+
 /* botones*/
 .button {
   padding: 0.5em 1em;
@@ -139,99 +236,24 @@ body {
   width: 105%; }
 
 .button:hover {
-  color: #111; }
+  color: black; }
 
 .input_estilo {
   background: transparent;
   border: none;
   border-bottom: 1px solid white;
-  border-radius: 0; }
+  border-radius: 0;
+  color: white; }
 
 .input_estilo:focus {
   background: transparent;
   border: none;
   border-bottom: 1px solid white;
   border-radius: 0;
-  outline: none; }
+  outline: none;
+  color: white; }
 
 /* fin botones*/
-/* Primera seccion*/
-.pri-sec {
-  min-height: 80vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column; }
-
-/* Fin primera seccion*/
-/* Segunda Seccion*/
-.seg-sec {
-  display: flex;
-  min-height: 100vh;
-  width: 100%;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center; }
-  .seg-sec .box_imaganes_arte {
-    width: 50%;
-    height: 40%; }
-  .seg-sec .box_arte {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 5%; }
-  .seg-sec .box_parrafo_arte {
-    width: 80%;
-    align-items: center; }
-
-/* Fin segunda seccion*/
-/* Tercera seccion*/
-.ter-sec {
-  min-height: 90vh;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  background-image: linear-gradient(115deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/images/Proyecto_nuevo_foto_2.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position-y: center;
-  margin-right: 0; }
-  .ter-sec .me_presento {
-    width: 40%;
-    justify-content: center;
-    margin: auto;
-    margin-left: 5%; }
-
-/*
-.me_presento {
-  width: 40%;
-
-  justify-content: center;
-
-  margin: auto;
-  margin-left: 5%;
-}
-/*
-.box_arte {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  margin-left: 5%;
-}
-.box_parrafo_arte {
-  width: 80%;
-  align-items: center;
-}*/
-/*
-.box_imaganes_arte {
-  width: 50%;
-  height: 40%;
-}*/
 /*caroucel*/
 .carousel-item {
   height: 60vh;
@@ -243,165 +265,43 @@ body {
   object-fit: cover; }
 
 /*fin caroucel*/
-/* Fin tercera seccion*/
-.center {
-  text-align: center; }
-
-/* footer */
-footer {
-  display: flex;
-  flex-direction: column;
-  background-color: black;
-  height: 12vh;
-  color: gray;
-  width: 100%;
-  align-items: center;
-  justify-content: center; }
-  footer .derechos {
-    color: gray;
-    font-family: "Poppins", sans-serif;
-    font-size: 15px; }
-  footer .redes {
-    color: gray; }
-
-/*.derechos {
-  color: gray;
+/*tutulos*/
+.title {
   font-family: "Poppins", sans-serif;
-  font-size: 15px;
-}
-.redes {
-  color: gray;
-}*/
-.hover-instagram:hover {
-  color: deeppink; }
+  font-size: 100px;
+  border-bottom: 3px solid white;
+  font-weight: 600;
+  letter-spacing: 8px;
+  color: white; }
 
-.hover-whatsapp:hover {
-  color: aquamarine; }
-
-.hover-facebook:hover {
-  color: steelblue; }
-
-/* Fin Footer*/
-.seccion_galeria {
-  min-height: 100vh; }
-  .seccion_galeria .h1_galeria {
-    text-align: center; }
-  .seccion_galeria .box_galeria {
-    width: 100%;
-    min-height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  .seccion_galeria .box_galeria_carrousel_fotografia {
-    width: 40%; }
-  .seccion_galeria .box_galeria_carrousel_tatuajes {
-    width: 40%; }
-
-/*
-.box_galeria {
-  width: 100%;
-  min-height: 90vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.box_galeria_carrousel_fotografia {
-  width: 40%;
-}
-.box_galeria_carrousel_tatuajes {
-  width: 40%;
-}
-
-.h1_galeria {
-  text-align: center;
-}
-.h1_servicios {
-  text-align: center;
-}*/
-.h1_contacto {
-  text-align: center; }
-
-.album {
+/* Fin Titulos */
+/* Letra parrafo*/
+.l-principal {
   color: white;
-  padding-top: 40vh; }
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px; }
 
-.seccion_sobremi {
-  padding-top: 10vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100vh; }
+/* fin letra parrafo */
+/* Subtitulos */
+.subtitle {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  letter-spacing: 4px; }
 
-.box_sobremi {
-  display: flex;
-  flex-direction: column;
-  width: 85%;
-  justify-content: center; }
+.subprincipal {
+  font-size: 35px; }
 
-.parrafo_sobremi {
-  padding: 2%; }
-
-.seccion_contacto {
-  min-height: 100vh;
-  padding-top: 10vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; }
-
-.seccion_servicios {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: center; }
-  .seccion_servicios .h1_servicios {
-    text-align: center; }
-  .seccion_servicios .box_servicios {
-    display: flex;
-    flex-direction: column;
-    padding-top: 5%;
-    width: 85%;
-    justify-content: center;
-    gap: 5px; }
-
-/*
-.box_servicios {
-  display: flex;
-  flex-direction: column;
-  padding-top: 5%;
-  width: 85%;
-  justify-content: center;
-
-  gap: 5px;
-}*/
-.box_contacto {
-  background-color: rgba(0, 0, 0, 0.808);
-  display: flex;
-  padding: 10px;
-  margin-bottom: 20px;
-  flex-wrap: wrap; }
-
-.form_contacto {
-  display: inline-block;
-  flex-wrap: wrap;
-  width: 100%;
-  flex-direction: column;
-  align-items: start;
-  gap: 5px; }
-
-hr {
-  opacity: 1;
-  border: solid white 0.5px; }
-
+/* Fin Subtitulos*/
 @media (max-width: 992px) {
   .header nav ul {
     align-items: center;
-    background-color: black; } }
-
-@media (max-width: 576px) {
-  .derechos {
-    font-size: 10px; } }
+    background-color: black; }
+    .header nav ul nav {
+      border-bottom: 5px solid white; }
+      .header nav ul nav ul {
+        align-items: center;
+        background-color: black; } }
 
 @media (max-width: 768px) {
   .seccion_galeria {
@@ -416,43 +316,49 @@ hr {
       align-items: center;
       flex-direction: column;
       margin-top: 5%; }
-    .seccion_galeria .box_galeria_carrousel_fotografia {
-      width: 90%;
-      margin-top: 5%; }
-    .seccion_galeria .box_galeria_carrousel_tatuajes {
-      width: 90%;
-      margin-top: 5%;
-      margin-bottom: 5%; }
-  .seg-sec {
-    display: flex;
-    min-height: 100vh;
-    width: 100%;
-    flex-direction: column-reverse;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center; }
+      .seccion_galeria .box_galeria .box_galeria_carrousel_fotografia {
+        width: 90%;
+        margin-top: 5%; }
+      .seccion_galeria .box_galeria .box_galeria_carrousel_tatuajes {
+        width: 90%;
+        margin-top: 5%;
+        margin-bottom: 5%; }
   .l-principal {
     text-align: center; }
-  .box_parrafo_arte {
-    width: 100%;
-    align-items: center;
-    display: flex;
-    flex-direction: column; }
-  .box_arte {
-    margin-left: 0;
-    margin-bottom: 5%; }
+  .seg-sec {
+    flex-direction: column-reverse;
+    width: 100%; }
+    .seg-sec .box_parrafo_arte {
+      width: 90%;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      text-align: center; }
+    .seg-sec .box_arte {
+      width: 100%;
+      margin-left: 0;
+      margin-bottom: 5%;
+      align-items: center; }
+    .seg-sec .box_imaganes_arte {
+      width: 90%;
+      height: 40%; }
   .title_center_mobile {
     text-align: center; }
-  .box_imaganes_arte {
-    width: 90%;
-    height: 40%; }
+  .title {
+    font-size: 50px; }
+  .descripcion_title {
+    font-size: 20px; }
   .me_presento {
     width: 90%;
     justify-content: center;
     display: flex;
     flex-direction: column;
     align-items: center; }
-  .title {
-    font-size: 50px; }
-  .descripcion_title {
-    font-size: 20px; } }
+  .subtitle {
+    text-align: center; } }
+
+@media (max-width: 576px) {
+  footer .derechos {
+    color: gray;
+    font-family: "Poppins", sans-serif;
+    font-size: 10px; } }

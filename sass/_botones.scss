@@ -34,13 +34,14 @@
 }
 
 .button:hover {
-  color: #111;
+  color: black;
 }
 .input_estilo {
   background: transparent;
   border: none;
   border-bottom: 1px solid white;
   border-radius: 0;
+  color: white;
 }
 .input_estilo:focus {
   background: transparent;
@@ -48,5 +49,6 @@
   border-bottom: 1px solid white;
   border-radius: 0;
   outline: none;
+  color: white;
 }
 /* fin botones*/
