@@ -3,19 +3,24 @@ $color-footer: rgb(0, 0, 0);
 $color-letras: white;
 $color-letras-header-footer: gray;
 $texto-fuente: "Poppins", sans-serif;
+$center: center;
+$flex: flex;
+$Min-height: 100vh;
 
+/*MAPAS*/
 $colores-redes: (
   instagram: deeppink,
   face: steelblue,
   whatsapp: aquamarine,
 );
+/* FIN MAPAS */
 
 /* CLASES GENERALES */
 .margen_top {
-  margin-top: 12vh;
+  margin-top: (6vh * 2);
 }
 .pp {
-  padding-top: 30px;
+  padding-top: (60px / 2);
 }
 .center {
   text-align: center;
@@ -23,7 +28,7 @@ $colores-redes: (
 
 hr {
   opacity: 1;
-  border: solid white 0.5px;
+  border: solid white (1px / 2);
 }
 .pading_0 {
   padding: 0;

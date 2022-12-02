@@ -1,7 +1,7 @@
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: $Min-height;
 }
 .body_index {
   background-image: linear-gradient(

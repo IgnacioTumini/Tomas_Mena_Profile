@@ -1,29 +1,24 @@
 .seccion_contacto {
-  min-height: 100vh;
-
-  display: flex;
-  flex-direction: column;
+  min-height: $Min-height;
+  @include flex-direction-justificar(column, $flex, $center);
   align-items: center;
-  justify-content: center;
   padding-top: 8%;
-}
-.h1_contacto {
-  text-align: center;
-}
-.box_contacto {
-  background-color: rgba(0, 0, 0, 0.808);
-  display: flex;
+  .h1_contacto {
+    text-align: center;
+  }
+  .box_contacto {
+    background-color: rgba(0, 0, 0, 0.808);
+    display: flex;
+    padding: 10px;
+    margin-bottom: 20px;
 
-  padding: 10px;
-  margin-bottom: 20px;
-
-  flex-wrap: wrap;
-}
-.form_contacto {
-  display: inline-block;
-  flex-wrap: wrap;
-  width: 100%;
-  flex-direction: column;
-  align-items: start;
-  gap: 5px;
+    flex-wrap: wrap;
+  }
+  .form_contacto {
+    @include flex-direction-justificar(column, inline-block, none);
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: start;
+    gap: 5px;
+  }
 }

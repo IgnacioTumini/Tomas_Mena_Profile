@@ -4,14 +4,11 @@
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-}
-.box_sobremi {
-  display: flex;
-  flex-direction: column;
-
-  width: 85%;
-  justify-content: center;
-}
-.parrafo_sobremi {
-  padding: 2%;
+  .box_sobremi {
+    @include flex-direction-justificar(column, $flex, $center);
+    width: 85%;
+    .parrafo_sobremi {
+      padding: 2%;
+    }
+  }
 }

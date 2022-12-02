@@ -1,7 +1,7 @@
 .header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include alineacion-flex(space-between, $center);
+
   position: fixed;
   background-color: $color-header;
   z-index: calc(4);

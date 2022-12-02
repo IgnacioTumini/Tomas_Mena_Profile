@@ -1,3 +1,5 @@
+/*MAPAS*/
+/* FIN MAPAS */
 /* CLASES GENERALES */
 .margen_top {
   margin-top: 12vh; }
@@ -62,12 +64,12 @@ body {
 footer {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   background-color: black;
   height: 12vh;
   color: gray;
   width: 100%;
-  align-items: center;
-  justify-content: center; }
+  align-items: center; }
   footer .derechos {
     color: gray;
     font-family: "Poppins", sans-serif;
@@ -84,9 +86,13 @@ footer {
 .pri-sec {
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   justify-content: center;
   align-items: center;
-  flex-direction: column; }
+  width: 80%;
+  margin: auto;
+  align-items: center; }
 
 /* Segunda Seccion*/
 .seg-sec {
@@ -135,15 +141,13 @@ footer {
   flex-direction: column;
   align-items: center;
   min-height: 100vh; }
-
-.box_sobremi {
-  display: flex;
-  flex-direction: column;
-  width: 85%;
-  justify-content: center; }
-
-.parrafo_sobremi {
-  padding: 2%; }
+  .seccion_sobremi .box_sobremi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 85%; }
+    .seccion_sobremi .box_sobremi .parrafo_sobremi {
+      padding: 2%; }
 
 .seccion_galeria {
   min-height: 100vh;
@@ -165,27 +169,25 @@ footer {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   padding-top: 8%; }
-
-.h1_contacto {
-  text-align: center; }
-
-.box_contacto {
-  background-color: rgba(0, 0, 0, 0.808);
-  display: flex;
-  padding: 10px;
-  margin-bottom: 20px;
-  flex-wrap: wrap; }
-
-.form_contacto {
-  display: inline-block;
-  flex-wrap: wrap;
-  width: 100%;
-  flex-direction: column;
-  align-items: start;
-  gap: 5px; }
+  .seccion_contacto .h1_contacto {
+    text-align: center; }
+  .seccion_contacto .box_contacto {
+    background-color: rgba(0, 0, 0, 0.808);
+    display: flex;
+    padding: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap; }
+  .seccion_contacto .form_contacto {
+    display: inline-block;
+    flex-direction: column;
+    justify-content: none;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: start;
+    gap: 5px; }
 
 .seccion_servicios {
   min-height: 100vh;
@@ -199,9 +201,9 @@ footer {
   .seccion_servicios .box_servicios {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     padding-top: 5%;
     width: 85%;
-    justify-content: center;
     gap: 5px; }
 
 /* botones*/
@@ -312,9 +314,9 @@ footer {
       width: 100%;
       min-height: 90vh;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      flex-direction: column;
       margin-top: 5%; }
       .seccion_galeria .box_galeria .box_galeria_carrousel_fotografia {
         width: 90%;

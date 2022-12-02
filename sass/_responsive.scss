@@ -21,10 +21,8 @@
     .box_galeria {
       width: 100%;
       min-height: 90vh;
-      display: flex;
-      justify-content: center;
+      @include flex-direction-justificar(column);
       align-items: center;
-      flex-direction: column;
       margin-top: 5%;
       .box_galeria_carrousel_fotografia {
         width: 90%;

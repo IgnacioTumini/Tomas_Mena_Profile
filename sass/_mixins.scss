@@ -1,0 +1,13 @@
+@mixin flex-direction-justificar(
+  $direction,
+  $display: $flex,
+  $justify: $center
+) {
+  display: $display;
+  flex-direction: $direction;
+  justify-content: $justify;
+}
+@mixin alineacion-flex($justify, $center) {
+  justify-content: $justify;
+  align-items: $center;
+}

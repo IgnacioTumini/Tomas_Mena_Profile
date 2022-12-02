@@ -1,5 +1,5 @@
 .seccion_servicios {
-  min-height: 100vh;
+  min-height: $Min-height;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -9,12 +9,9 @@
     text-align: center;
   }
   .box_servicios {
-    display: flex;
-    flex-direction: column;
+    @include flex-direction-justificar(column, $flex, $center);
     padding-top: 5%;
     width: 85%;
-    justify-content: center;
-
     gap: 5px;
   }
 }

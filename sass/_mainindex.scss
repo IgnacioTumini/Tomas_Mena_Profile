@@ -1,14 +1,16 @@
 .pri-sec {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
+  min-height: $Min-height;
+  @include flex-direction-justificar(column, $flex, $center);
+
+  @include alineacion-flex($center, $center);
+  width: 80%;
+  margin: auto;
   align-items: center;
-  flex-direction: column;
 }
 /* Segunda Seccion*/
 .seg-sec {
   display: flex;
-  min-height: 100vh;
+  min-height: $Min-height;
   width: 100%;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -34,7 +36,7 @@
 
 /* Fin segunda seccion*/
 .ter-sec {
-  min-height: 90vh;
+  min-height: ($Min-height - 10);
   width: 100%;
   display: flex;
   flex-direction: row;

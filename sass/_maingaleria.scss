@@ -1,12 +1,12 @@
 .seccion_galeria {
-  min-height: 100vh;
+  min-height: $Min-height;
   padding-top: 5%;
   .h1_galeria {
     text-align: center;
   }
   .box_galeria {
     width: 100%;
-    min-height: 90vh;
+    min-height: ($Min-height - 10);
     display: flex;
     justify-content: center;
     align-items: center;
