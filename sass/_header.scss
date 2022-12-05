@@ -1,7 +1,6 @@
 .header {
   display: flex;
   @include alineacion-flex(space-between, $center);
-
   position: fixed;
   background-color: $color-header;
   z-index: calc(4);
@@ -14,17 +13,13 @@
       gap: 40px;
       width: 100%;
       justify-content: end;
-
       height: 100%;
-
       margin-bottom: none;
-
       .letras_navegador {
         color: gray;
         text-decoration: none;
         font-family: "Poppins", sans-serif;
         font-weight: 600;
-
         &:hover {
           color: white;
         }

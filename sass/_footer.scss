@@ -1,12 +1,10 @@
 footer {
   @include flex-direction-justificar(column, $flex, $center);
-
   background-color: $color-footer;
   height: ($Min-height - 88);
   color: $color-letras-header-footer;
   width: 100%;
   align-items: center;
-
   .derechos {
     color: $color-letras-header-footer;
     font-family: $texto-fuente;
