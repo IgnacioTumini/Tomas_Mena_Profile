@@ -4,7 +4,6 @@
     background-color: rgb(0, 0, 0);
 
     nav {
-      border-bottom: 5px solid white;
       ul {
         align-items: center;
         background-color: rgb(0, 0, 0);
@@ -12,6 +11,7 @@
     }
   }
 }
+
 @media (max-width: 768px) {
   .seccion_galeria {
     min-height: 100vh;

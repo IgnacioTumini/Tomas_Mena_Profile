@@ -253,7 +253,8 @@ footer {
   border-bottom: 1px solid white;
   border-radius: 0;
   outline: none;
-  color: white; }
+  color: white;
+  box-shadow: none; }
 
 /* fin botones*/
 /*caroucel*/
@@ -299,11 +300,9 @@ footer {
   .header nav ul {
     align-items: center;
     background-color: black; }
-    .header nav ul nav {
-      border-bottom: 5px solid white; }
-      .header nav ul nav ul {
-        align-items: center;
-        background-color: black; } }
+    .header nav ul nav ul {
+      align-items: center;
+      background-color: black; } }
 
 @media (max-width: 768px) {
   .seccion_galeria {
