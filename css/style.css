@@ -45,7 +45,9 @@ body {
   background-color: rgba(0, 0, 0, 0.959);
   z-index: calc(4);
   width: 100%; }
-  .header nav ul {
+  .header .logo {
+    height: 50px; }
+  .header nav .container ul {
     display: flex;
     list-style: none;
     gap: 40px;
@@ -53,12 +55,12 @@ body {
     justify-content: end;
     height: 100%;
     margin-bottom: none; }
-    .header nav ul .letras_navegador {
+    .header nav .container ul .letras_navegador {
       color: gray;
       text-decoration: none;
       font-family: "Poppins", sans-serif;
       font-weight: 600; }
-      .header nav ul .letras_navegador:hover {
+      .header nav .container ul .letras_navegador:hover {
         color: white; }
 
 footer {
