@@ -5,11 +5,11 @@
   background-color: $color-header;
   z-index: calc(4);
   width: 100%;
-  .logo {
-    height: 50px;
-  }
 
   nav {
+    .logo {
+      height: 50px;
+    }
     ul {
       display: flex;
       list-style: none;
@@ -18,6 +18,7 @@
       justify-content: end;
       height: 100%;
       margin-bottom: none;
+
       .letras_navegador {
         color: gray;
         text-decoration: none;
