@@ -96,8 +96,6 @@ footer {
   width: 80%;
   margin: auto;
   align-items: center; }
-  .pri-sec .animate__animated.animate__fadeIn {
-    -animate-duration: 5s; }
 
 /* Segunda Seccion*/
 .seg-sec {
@@ -319,7 +317,7 @@ footer {
       width: 100%;
       min-height: 90vh;
       display: flex;
-      flex-direction: column;
+      flex-direction: column-reverse;
       justify-content: center;
       align-items: center;
       margin-top: 5%; }
