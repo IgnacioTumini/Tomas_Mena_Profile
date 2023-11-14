@@ -4,17 +4,21 @@
   .h1_galeria {
     text-align: center;
   }
+
   .box_galeria {
     width: 100%;
     min-height: ($Min-height - 10);
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column-reverse;
+
     .box_galeria_carrousel_fotografia {
-      width: 40%;
+      width: 80%;
     }
+
     .box_galeria_carrousel_tatuajes {
-      width: 40%;
+      width: 80%;
     }
   }
 }

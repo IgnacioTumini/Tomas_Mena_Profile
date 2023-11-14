@@ -68,14 +68,15 @@ footer {
   flex-direction: column;
   justify-content: center;
   background-color: black;
-  height: 12vh;
+  height: 20vh;
   color: gray;
   width: 100%;
-  align-items: center; }
+  align-items: center;
+  gap: 10px; }
   footer .derechos {
     color: gray;
     font-family: "Poppins", sans-serif;
-    font-size: 15px; }
+    font-size: 13px; }
   footer .redes {
     color: gray; }
   footer .hover-instagram:hover {
@@ -95,6 +96,8 @@ footer {
   width: 80%;
   margin: auto;
   align-items: center; }
+  .pri-sec .animate__animated.animate__fadeIn {
+    -animate-duration: 5s; }
 
 /* Segunda Seccion*/
 .seg-sec {
@@ -161,11 +164,12 @@ footer {
     min-height: 90vh;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    flex-direction: column-reverse; }
     .seccion_galeria .box_galeria .box_galeria_carrousel_fotografia {
-      width: 40%; }
+      width: 80%; }
     .seccion_galeria .box_galeria .box_galeria_carrousel_tatuajes {
-      width: 40%; }
+      width: 80%; }
 
 .seccion_contacto {
   min-height: 100vh;
@@ -261,7 +265,7 @@ footer {
 /* fin botones*/
 /*caroucel*/
 .carousel-item {
-  height: 60vh;
+  height: 70vh;
   padding-left: 5%;
   padding-right: 5%; }
 
