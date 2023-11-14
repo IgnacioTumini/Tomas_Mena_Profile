@@ -21,7 +21,7 @@
     .box_galeria {
       width: 100%;
       min-height: 90vh;
-      @include flex-direction-justificar(column);
+      @include flex-direction-justificar(column-reverse);
       align-items: center;
       margin-top: 5%;
       .box_galeria_carrousel_fotografia {
